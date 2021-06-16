@@ -14,6 +14,8 @@
 		B40A37DC2679FC8A0017F377 /* Tasks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B40A37DA2679FC8A0017F377 /* Tasks.xcdatamodeld */; };
 		B40A37DE2679FC8D0017F377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B40A37DD2679FC8D0017F377 /* Assets.xcassets */; };
 		B40A37E12679FC8D0017F377 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40A37DF2679FC8D0017F377 /* LaunchScreen.storyboard */; };
+		B40A37E9267A03CF0017F377 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40A37E8267A03CF0017F377 /* EntryViewController.swift */; };
+		B40A37EB267A04730017F377 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40A37EA267A04730017F377 /* TasksViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		B40A37DD2679FC8D0017F377 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B40A37E02679FC8D0017F377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B40A37E22679FC8D0017F377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B40A37E8267A03CF0017F377 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		B40A37EA267A04730017F377 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				B40A37D12679FC8A0017F377 /* AppDelegate.swift */,
+				B40A37E8267A03CF0017F377 /* EntryViewController.swift */,
 				B40A37D32679FC8A0017F377 /* SceneDelegate.swift */,
 				B40A37D52679FC8A0017F377 /* ViewController.swift */,
 				B40A37D72679FC8A0017F377 /* Main.storyboard */,
@@ -66,6 +71,7 @@
 				B40A37DF2679FC8D0017F377 /* LaunchScreen.storyboard */,
 				B40A37E22679FC8D0017F377 /* Info.plist */,
 				B40A37DA2679FC8A0017F377 /* Tasks.xcdatamodeld */,
+				B40A37EA267A04730017F377 /* TasksViewController.swift */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -142,9 +148,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B40A37DC2679FC8A0017F377 /* Tasks.xcdatamodeld in Sources */,
+				B40A37E9267A03CF0017F377 /* EntryViewController.swift in Sources */,
 				B40A37D62679FC8A0017F377 /* ViewController.swift in Sources */,
 				B40A37D22679FC8A0017F377 /* AppDelegate.swift in Sources */,
 				B40A37D42679FC8A0017F377 /* SceneDelegate.swift in Sources */,
+				B40A37EB267A04730017F377 /* TasksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

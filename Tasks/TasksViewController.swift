@@ -8,22 +8,29 @@
 import UIKit
 
 class TasksViewController: UIViewController {
+    
+    @IBOutlet var label: UILabel!
+    
+    var task: String?
+    var number: Int?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        label.text = task
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Delete", style: .done, target: self, action: #selector(deleteTask))
     }
     
+    @objc func deleteTask() {
+        guard let count = UserDefaults().value(forKey: "count") as? Int else { return }
 
-    /*
-    // MARK: - Navigation
+        let newCount = count - 1
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        guard let currentPosition = number else { return }
+        UserDefaults().setValue(newCount, forKey: "count")
+        UserDefaults().setValue(nil, forKey: "task_\(currentPosition)")
+    
     }
-    */
 
 }
